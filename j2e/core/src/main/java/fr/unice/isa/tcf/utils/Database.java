@@ -1,8 +1,8 @@
 package fr.unice.isa.tcf.utils;
 
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.entities.Order;
+import fr.unice.isa.tcf.entities.Customer;
+import fr.unice.isa.tcf.entities.Item;
+import fr.unice.isa.tcf.entities.Order;
 
 import javax.ejb.Singleton;
 import java.util.HashMap;
