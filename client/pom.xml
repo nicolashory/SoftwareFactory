@@ -7,7 +7,8 @@
     <name>ISA :: The Cookie Factory :: Remote Client</name>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>../adecouper</module>
+        <module>../j2e/adecouper</module>
+        <module>../j2e/core</module>
     </modules>
 
     <properties>
