@@ -1,0 +1,7 @@
+Découpage du serveur j2e:
+
+Premier Module:
+    Core avec toutes les entités + utils + Interceptors.logger
+
+Faire un module par Webservice
+
