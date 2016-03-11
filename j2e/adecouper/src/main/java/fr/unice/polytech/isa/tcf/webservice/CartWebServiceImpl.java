@@ -4,8 +4,8 @@ import fr.unice.isa.tcf.entities.Customer;
 import fr.unice.isa.tcf.entities.Item;
 import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.CustomerFinder;
-import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownCustomerException;
+import fr.unice.isa.tcf.exceptions.PaymentException;
+import fr.unice.isa.tcf.exceptions.UnknownCustomerException;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;

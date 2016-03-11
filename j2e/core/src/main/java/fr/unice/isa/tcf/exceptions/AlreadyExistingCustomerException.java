@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.exceptions;
+package fr.unice.isa.tcf.exceptions;
 
 import java.io.Serializable;
 

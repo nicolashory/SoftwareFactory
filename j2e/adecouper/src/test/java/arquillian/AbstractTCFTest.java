@@ -1,12 +1,12 @@
 package arquillian;
 
+import fr.unice.isa.tcf.entities.Customer;
+import fr.unice.isa.tcf.utils.Database;
 import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.components.CartBean;
 import fr.unice.polytech.isa.tcf.components.carts.CartStatefulBean;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
+import fr.unice.isa.tcf.exceptions.AlreadyExistingCustomerException;
 import fr.unice.polytech.isa.tcf.interceptors.Logger;
-import fr.unice.polytech.isa.tcf.utils.Database;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;

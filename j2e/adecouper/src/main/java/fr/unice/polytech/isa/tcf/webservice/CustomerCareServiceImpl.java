@@ -6,8 +6,8 @@ import fr.unice.isa.tcf.entities.OrderStatus;
 import fr.unice.polytech.isa.tcf.CatalogueExploration;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;
 import fr.unice.polytech.isa.tcf.Tracker;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
+import fr.unice.isa.tcf.exceptions.AlreadyExistingCustomerException;
+import fr.unice.isa.tcf.exceptions.UnknownOrderId;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
