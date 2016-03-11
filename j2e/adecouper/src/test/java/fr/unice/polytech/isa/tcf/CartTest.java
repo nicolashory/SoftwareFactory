@@ -2,12 +2,12 @@ package fr.unice.polytech.isa.tcf;
 
 // business imports
 import arquillian.AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.entities.Cookies;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
 
 import java.util.*;
 // component test framework import
+import fr.unice.isa.tcf.entities.Cookies;
+import fr.unice.isa.tcf.entities.Customer;
+import fr.unice.isa.tcf.entities.Item;
 import org.jboss.arquillian.junit.Arquillian;
 // java annotations
 import org.junit.Before;

@@ -2,7 +2,7 @@ package fr.unice.polytech.isa.tcf;
 
 
 import arquillian.AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.entities.*;
+import fr.unice.isa.tcf.entities.*;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
 import org.junit.Test;
