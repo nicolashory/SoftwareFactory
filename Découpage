@@ -5,3 +5,23 @@ Premier Module:
 
 Faire un module par Webservice
 
+
+A faire:
+
+Finir l'installation de NGinx
+Installer Jenkins
+Configurer NGinx pour pouvoir utiliser artefactory a la main puis également jenkins
+
+Corriger le problème de génération des WSDL
+Regenerer les nouvelles WSDL à placer dans le client
+
+Tester de faire:
+1 Qui compile le serveur j2e, 1 autre le .Net et un autre le client, de récuperer une archive que l'on a pas compiler nous meme sur Artefactory et de faire marcher notre système avec ça.
+
+Continuer de découper l'application plus que ce que l'on à déja fait
+
+Faire un script qui effectue toute la chaine de build à partir des jar?
+Voir comment fonctionne le plugin maven qui va avec artefactory pour tout prendre en compte
+
+
+Des que le découpage sera fait, rajouter des tests d'intégrations (nos parties marchent individuellement, il faut tester que même builder sépparement, ca marche encore)
