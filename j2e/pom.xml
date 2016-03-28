@@ -45,13 +45,46 @@
 
 
     <repositories>
-        <!-- Snapshot repository to access to the latest version of the OpenEJB framework -->
         <repository>
-            <id>apache-m2-snapshot</id>
-            <name>Apache Snapshot Repository</name>
-            <url>https://repository.apache.org/content/groups/snapshots</url>
+            <id>central</id>
+            <url>http://erebe-vm15.i3s.unice.fr/artifactory/libs-release-local</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <url>http://erebe-vm5.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>http://erebe-vm5.i3s.unice.fr/artifactory/plugins-release</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>snapshots</id>
+            <url>http://erebe-vm5.i3s.unice.fr/artifactory/plugins-snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>snapshots</id>
+            <name>TCF/DevOps en PLS</name>
+            <url>http://erebe-vm5.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+        </repository>
+    </distributionManagement>
+
 
     <dependencies>
         <!-- Dependencies for the OpenEJB framework -->
@@ -129,6 +162,11 @@
         <finalName>tcf-backend</finalName>
         <defaultGoal>package</defaultGoal>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
