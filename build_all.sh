@@ -11,6 +11,6 @@ mvn clean package
 cd ..
 
 ## Building the .Net system
-##cd dotNet
-##./compile.sh
-##cd ..
+cd dotNet
+./compile.sh
+cd ..
