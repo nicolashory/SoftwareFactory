@@ -24,6 +24,10 @@ Voir comment fonctionne le plugin maven qui va avec artefactory pour tout prendr
 
 Des que le découpage sera fait, rajouter des tests d'intégrations (nos parties marchent individuellement, il faut tester que même builder sépparement, ca marche encore)
 
+mettre les tests avec leurs modules
+regarder les dépendances (A depend de B depend de C -> je mets A et B dans le pom de C)
+supprimer module de Arti (adecouper)
+
 
 DONE
 
