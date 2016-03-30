@@ -2,22 +2,29 @@ package fr.unice.polytech.isa.tcf;
 
 // business imports
 
-import java.util.*;
-// component test framework import
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;
+import fr.unice.polytech.isa.tcf.tests.AbstractTCFTest;
 import org.jboss.arquillian.junit.Arquillian;
-// java annotations
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import javax.ejb.EJB;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+
+// component test framework import
+// java annotations
 // static import to lighten test writing
-import static org.junit.Assert.*;
 
 @RunWith(Arquillian.class)
-public class CartTest extends AbstractCartTest {
+public class CartTest extends AbstractTCFTest {
 
 	@EJB(name = "cart-stateless") private CartModifier cart;
 	@EJB CustomerRegistration registry;

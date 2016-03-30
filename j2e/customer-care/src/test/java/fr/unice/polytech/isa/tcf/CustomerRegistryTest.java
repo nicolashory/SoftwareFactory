@@ -1,16 +1,16 @@
 package fr.unice.polytech.isa.tcf;
 
-import fr.unice.polytech.isa.arquillian.AbstractTCFTest;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
+import fr.unice.polytech.isa.tcf.tests.AbstractTCFTest;
 import org.jboss.arquillian.junit.Arquillian;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import javax.ejb.EJB;
 import java.util.Optional;
-
-import static org.junit.Assert.*;
 
 @RunWith(Arquillian.class)
 public class CustomerRegistryTest extends AbstractTCFTest {
@@ -31,7 +31,7 @@ public class CustomerRegistryTest extends AbstractTCFTest {
 		String name = "John";
 		String creditCard = "credit card number";
 		registry.register(name, creditCard);
-		Optional<Customer> customer = finder.findByName(name);
+		Optional<Customer> customer = finder.findByName(name); // A debug
 		Assert.assertTrue(customer.isPresent());
 		Customer john = customer.get();
 		Assert.assertEquals(name, john.getName());

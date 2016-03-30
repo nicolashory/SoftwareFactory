@@ -1,5 +1,6 @@
 package fr.unice.polytech.isa.tcf;
 
+
 import fr.unice.polytech.isa.tcf.entities.Customer;
 
 import javax.ejb.Local;

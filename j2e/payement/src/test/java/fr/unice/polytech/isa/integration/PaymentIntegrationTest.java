@@ -1,8 +1,6 @@
 package fr.unice.polytech.isa.integration;
 
 
-import static org.junit.Assert.assertTrue;
-
 /*
 
 @RunWith(Arquillian.class)

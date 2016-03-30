@@ -1,7 +1,8 @@
 package fr.unice.polytech.isa.tcf;
 
-import fr.unice.polytech.isa.arquillian.AbstractTCFTest;
+
 import fr.unice.polytech.isa.tcf.entities.Cookies;
+import fr.unice.polytech.isa.tcf.tests.AbstractTCFTest;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
