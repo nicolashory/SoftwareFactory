@@ -35,9 +35,9 @@ public interface CustomerCareService {
     @WebResult(name = "status", targetNamespace = "")
     @RequestWrapper(localName = "track", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.Track")
     @ResponseWrapper(localName = "trackResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.TrackResponse")
-    public OrderStatus track(
-        @WebParam(name = "order_id", targetNamespace = "")
-        String orderId)
+    OrderStatus track(
+            @WebParam(name = "order_id", targetNamespace = "")
+            String orderId)
         throws UnknownOrderId_Exception
     ;
 
@@ -50,7 +50,7 @@ public interface CustomerCareService {
     @WebResult(name = "recipes", targetNamespace = "")
     @RequestWrapper(localName = "listAllRecipes", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.ListAllRecipes")
     @ResponseWrapper(localName = "listAllRecipesResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.ListAllRecipesResponse")
-    public List<Cookies> listAllRecipes();
+    List<Cookies> listAllRecipes();
 
     /**
      * 
@@ -61,11 +61,11 @@ public interface CustomerCareService {
     @WebMethod
     @RequestWrapper(localName = "register", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.Register")
     @ResponseWrapper(localName = "registerResponse", targetNamespace = "http://webservice.tcf.isa.polytech.unice.fr/", className = "stubs.customerCare.RegisterResponse")
-    public void register(
-        @WebParam(name = "customer_name", targetNamespace = "")
-        String customerName,
-        @WebParam(name = "credit_card_number", targetNamespace = "")
-        String creditCardNumber)
+    void register(
+            @WebParam(name = "customer_name", targetNamespace = "")
+            String customerName,
+            @WebParam(name = "credit_card_number", targetNamespace = "")
+            String creditCardNumber)
         throws AlreadyExistingCustomerException_Exception
     ;
 
