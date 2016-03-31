@@ -49,13 +49,6 @@
 
     <repositories>
         <repository>
-            <id>central</id>
-            <url>http://erebe-vm5.i3s.unice.fr/artifactory/libs-release-local</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
             <id>snapshots</id>
             <url>http://erebe-vm5.i3s.unice.fr/artifactory/libs-snapshot-local</url>
             <releases>
