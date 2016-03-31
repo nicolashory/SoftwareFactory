@@ -45,8 +45,7 @@
             </properties>
         </profile>
     </profiles>
-
-
+    
     <repositories>
         <repository>
             <id>snapshots</id>
