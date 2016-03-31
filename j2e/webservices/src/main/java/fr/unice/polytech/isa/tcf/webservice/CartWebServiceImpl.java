@@ -20,6 +20,8 @@ public class CartWebServiceImpl implements CartWebService {
 	@EJB(name="stateless-cart") private CartModifier cart;
 	@EJB private CustomerFinder finder;
 
+
+
 	@Override
 	public void addItemToCustomerCart(String customerName, Item it)
 			throws UnknownCustomerException {
