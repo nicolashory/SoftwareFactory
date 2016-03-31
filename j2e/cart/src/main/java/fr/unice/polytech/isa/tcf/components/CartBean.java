@@ -21,12 +21,12 @@ public abstract class CartBean implements CartModifier {
 	@Override
 	@Interceptors({CartCounter.class})
 	public String validate(Customer c) throws PaymentException {
-		return cashier.payOrder(c, contents(new Customer()));
+		return cashier.payOrder(c, contents(c));
 	}
 
 	@Override
 	public final boolean remove(Customer c, Item item) {
-		return add(c, new Item(item.getCookie(), -item.getQuantity()));
+		return add(c, new Item(item.getCookie(), -item.getQuantity()+3));
 	}
 
 	/**
