@@ -71,7 +71,7 @@
             </releases>
         </pluginRepository>
     </pluginRepositories>
-
+    
     <distributionManagement>
         <repository>
             <id>snapshots</id>
