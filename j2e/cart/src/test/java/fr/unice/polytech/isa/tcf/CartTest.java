@@ -1,6 +1,5 @@
 package fr.unice.polytech.isa.tcf;
 
-
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;

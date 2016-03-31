@@ -36,7 +36,8 @@ public class CustomerRegistryBean
 	 ************************************/
 
 	@Override
-	public Optional<Customer> findByName(String name) {
+	public Optional<Customer> findByName(String name)
+	{
 		if (memory.getCustomers().containsKey(name))
 			return Optional.of(memory.getCustomers().get(name));
 		else
