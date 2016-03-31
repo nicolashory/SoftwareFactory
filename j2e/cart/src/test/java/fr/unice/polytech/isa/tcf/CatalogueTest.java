@@ -1,8 +1,6 @@
 package fr.unice.polytech.isa.tcf;
 
-
 import fr.unice.polytech.isa.tcf.entities.Cookies;
-import fr.unice.polytech.isa.tcf.tests.AbstractTCFTest;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,7 +8,6 @@ import org.junit.runner.RunWith;
 import javax.ejb.EJB;
 import java.util.Set;
 import static org.junit.Assert.*;
-
 
 @RunWith(Arquillian.class)
 public class CatalogueTest extends AbstractTCFTest {
