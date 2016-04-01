@@ -27,6 +27,7 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 	@EJB private CustomerFinder finder;
 	@EJB private CustomerRegistration registration;
 
+
 	private Set<Item> items;
 
 	@Before
