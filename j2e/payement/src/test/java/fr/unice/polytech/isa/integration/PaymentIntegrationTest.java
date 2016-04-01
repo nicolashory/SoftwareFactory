@@ -1,4 +1,4 @@
-/*package fr.unice.polytech.isa.integration;
+package fr.unice.polytech.isa.integration;
 
 
 import fr.unice.polytech.isa.tcf.AbstractTCFTest;
@@ -48,4 +48,3 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 	}
 
 }
-*/
