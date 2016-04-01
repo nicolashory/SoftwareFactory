@@ -26,7 +26,7 @@ public abstract class CartBean implements CartModifier {
 
 	@Override
 	public final boolean remove(Customer c, Item item) {
-		return add(c, new Item(item.getCookie(), -item.getQuantity()+3));
+		return add(c, new Item(item.getCookie(), -item.getQuantity()));
 
 
 	}
