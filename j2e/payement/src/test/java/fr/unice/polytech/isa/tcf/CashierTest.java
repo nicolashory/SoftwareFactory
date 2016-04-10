@@ -18,9 +18,6 @@ import javax.ejb.EJB;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-
 @RunWith(Arquillian.class)
 public class CashierTest extends AbstractTCFTest {
 

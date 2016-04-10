@@ -1,7 +1,6 @@
 package fr.unice.polytech.isa.tcf;
 
 import fr.unice.polytech.isa.tcf.components.CartBean;
-import fr.unice.polytech.isa.tcf.components.CustomerRegistryBean;
 import fr.unice.polytech.isa.tcf.components.carts.CartStatefulBean;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
