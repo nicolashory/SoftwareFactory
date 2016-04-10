@@ -50,4 +50,15 @@ public class CartIntegrationTest extends AbstractTCFTest
         Item[] oracle = new Item[] {new Item(Cookies.CHOCOLALALA, 3), new Item(Cookies.DARK_TEMPTATION, 5)  };
         assertEquals(new HashSet<>(Arrays.asList(oracle)), cart.contents(kevin));
     }
+
+    @Test
+    public void exceptionTest() throws Exception
+    {
+        String name = "Jean";
+        Optional<Customer> customer = finder.findByName(name); // A debug
+        Customer kevin = customer.get();
+
+        assertEquals(cart.add(kevin, new Item(Cookies.CHOCOLALALA, 3)),false);
+        assertEquals(cart.add(kevin, new Item(Cookies.DARK_TEMPTATION, 5)),false);
+    }
 }

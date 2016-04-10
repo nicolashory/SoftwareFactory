@@ -34,6 +34,7 @@ public class Main extends Shell<TCFPublicAPI> {
 		System.out.println("\n\nStarting Cookie on Demand by The Cookie Factory");
 		System.out.println("  - Remote server: " + host);
 		System.out.println("  - Port number:   " + port);
+		System.out.println("  - Print inutile");
 		Main main = new Main(host, port);
 		main.run();
 		System.out.println("Exiting Cookie on Demand by The Cookie Factory\n\n");
